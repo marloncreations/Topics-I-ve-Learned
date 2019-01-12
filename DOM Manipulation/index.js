@@ -36,11 +36,3 @@ function filterElement(e) {
         console.log(itemName.indexOf(text));
     })
 
-    // Array.from(listElements).map(ele => {
-    //     if(ele.textContent.toLowerCase() === text) {
-    //         ele.style.background = "red";
-    //         console.log("im that");
-    //     }
-    // });
-}
-
