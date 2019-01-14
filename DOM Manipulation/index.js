@@ -35,4 +35,4 @@ function filterElement(e) {
         }
         console.log(itemName.indexOf(text));
     })
-
+}
