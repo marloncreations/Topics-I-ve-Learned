@@ -2,13 +2,18 @@
 
 const myArray = [2,3,5,6,2,7,5,8];
 const myArray1 = ["a", "b", "c", "d", "e", "f", "g"];
-const myWordArray = ["random", "hello", "word", "jiraffe", "elephant", "short" ,"cool"]
+const myWordArray = ["random", "hello", "word", "jiraffe", "elephant", "short", "random","cool"]
 const myString = "Hello";
 const myObject = {
-    name: "Hello", id: 1,
-    name: "Hello", id: 2,
-    name: "Hello", id: 3
-};
+    name: "Marlon",
+    age: 23, 
+    country: "Colombia"
+}
+const myArrayOfObjects = [
+    {key: 1, value: "Marlon"},
+    {key: 2, value: "Robert"},
+    {key: 3, value: "Gabriela"}
+]
 
 // Array.length ------------------------------------------------------------------------------>>>>>>
 
@@ -200,3 +205,213 @@ const myObject = {
 // Array.prototype.indexOf() ----------------------------------------------------------->>>>>>
 
 // console.log(myWordArray.indexOf("jiraffe", 4)); // return the index of the element and -1 if its not present
+
+// Array.prototype.join() ----------------------------------------------------------->>>>>>
+
+// function addNumbers(array) {
+//     let sum = 0;
+//     array.forEach(element => {
+//         sum += element;
+//     });
+//     return `${array.join("+")} = ${sum}`;
+// }
+
+// console.log(addNumbers(myArray));
+
+// Array.prototype.lastIndexOf() ----------------------------------------------------------->>>>>>
+
+// console.log(myWordArray.lastIndexOf('random', -3));
+// console.log(myWordArray.lastIndexOf('random'));
+
+// Array.prototype.map() -------------------------------------------------------------------->>>>>>
+
+// const addString = myWordArray.map((item) => {
+//     console.log( `I am ${item}`);
+// })
+
+// const passString = myArray.map(number => console.log(Math.sqrt(number)));
+
+// const trial = myArray.map(() => "hello");
+// const trial1 = myArray.map(() => Math.floor(Math.random() * 10 + 1));
+// const trial2 = myArray.map(Math.sqrt);
+
+// console.log(trial);
+// console.log(trial1);
+// console.log(trial2);
+
+// const refomartedObjects = myArrayOfObjects.map((Obj) => {
+//     rObj = {}
+//     rObj[Obj.key] = Obj.value;
+//     return rObj;
+// });
+
+// console.log(refomartedObjects);
+
+// myObject['happy'] = `Hello I am ${myObject.name} and I am happy`;
+
+// console.log(myObject);
+
+// Understanding Objects
+
+// var myObj = new Object(),
+//     str = 'myString',
+//     rand = Math.random(),
+//     obj = new Object();
+
+// myObj.type              = 'Dot syntax';
+// myObj['date created']   = 'String with space';
+// myObj[str]              = 'String value';
+// myObj[rand]             = 'Random Number';
+// myObj[obj]              = 'Object';
+// myObj['']               = 'Even an empty string';
+
+// console.log(myObj);
+
+// Array.prototype.pop() & Array.prototype.push()--------------------------------------------->>>>>>
+
+// console.log(myWordArray);
+
+// const value = myWordArray.pop();
+
+// const newString = value + " MY BUNS";
+
+// const pushed = myWordArray.push(newString, "Hello");
+
+// console.log(value);
+// console.log(newString);
+// console.log(pushed);
+// console.log(myWordArray);
+
+// var vegetables = ['parsnip', 'potato'];
+// var moreVegs = ['celery', 'beetroot'];
+
+// // Merge the second array into the first one
+// // Equivalent to vegetables.push('celery', 'beetroot');
+// Array.prototype.push.apply(vegetables, moreVegs);
+
+// newArray = [...vegetables, ...moreVegs];
+
+// console.log(newArray, vegetables);
+
+// var obj = {
+//     length: 0,
+
+//     addElem: function addElem(elem) {
+//         // obj.length is automatically incremented 
+//         // every time an element is added.
+//         [].push.call(this, elem);
+//     }
+// };
+
+// // Let's add some empty objects just to illustrate.
+// obj.addElem({});
+// obj.addElem({});
+// console.log(obj);
+
+// Array.prototype.reduce() ---------------------------------------------------------------->>>>>>
+
+// function reducer(accumulator, currentValue, index) {
+//     return accumulator + currentValue;
+// }
+
+// const result = myArray.reduce(reducer, 0);
+
+// console.log(result);
+
+
+// // var maxCallback = ( acc, cur ) => Math.max( acc.x, cur.x );
+// var maxCallback2 = ( max, cur ) => Math.max( max, cur );
+
+// // reduce() without initialValue
+// // [ { x: 22 }, { x: 42 } ].reduce( maxCallback); // 42
+// // console.log([ { x: 22 }            ].reduce( maxCallback )); // { x: 22 }
+// // [                     ].reduce( maxCallback ); // TypeError
+
+// // map/reduce; better solution, also works for empty or larger arrays
+// console.log([ { x: 22 }, { x: 42 } ].map( el => el.x )
+//                         .reduce( maxCallback2, -Infinity ));
+
+//                         console.log(-Infinity);
+
+// var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+
+// var countedNames = names.reduce(function (allNames, name) { 
+//     console.log(allNames);
+//   if (name in allNames) {
+//     allNames[name]++;
+//   }
+//   else {
+//     allNames[name] = 1;
+//   }
+//   return allNames;
+// }, {});
+
+// console.log(countedNames);
+// // countedNames is:
+// // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
+
+// var people = [
+//     { name: 'Alice', age: 21 },
+//     { name: 'Max', age: 20 },
+//     { name: 'Jane', age: 20 },
+//     { name: 'Jane', age: 21}
+//   ];
+  
+//   function groupBy(objectArray, property) {
+//     return objectArray.reduce(function (acc, obj) { //acc = empty object // obj = each object
+//       var key = obj[property]; // creates a new variable and sets the key to the objects property e.g. 21
+//                                 // key = property 21
+//       if (!acc[key]) { // checks if there is not a key with that name passed in the arguments which is 21
+//         acc[key] = []; // if there is not , it sets the new key of 21 inside that object with a value of                     an empty array
+//       }
+//       acc[key].push(obj); //pushes current value object into specific array regarding the accumulator key
+//                     // if the key is 21 i will push that object there
+//       return acc;
+//     }, {});
+//   }
+  
+//   var groupedPeople = groupBy(people, 'age');
+
+//   console.log(groupedPeople);
+
+// Array.prototype.reduceRight() ---------------------------------------------------------------->>>>>>
+
+// var a = ['1', '2', '3', '4', '5']; 
+// var left  = a.reduce(function(prev, cur)      { return prev + cur; }); 
+// var right = a.reduceRight(function(prev, cur) { return prev + cur; }); 
+
+// console.log(left);  // "12345"
+// console.log(right); // "54321"
+
+// Array.prototype.reverse() ---------------------------------------------------------------->>>>>>
+
+
+// console.log(myArray);
+
+// const reversed = myArray.reverse();
+
+// console.log(reversed);
+
+// console.log(myArray);
+
+// Array.prototype.shift() ---------------------------------------------------------------->>>>>>
+
+// console.log(myArray);
+
+// const element = myArray.shift();
+
+// console.log(element);
+
+// console.log(myArray);
+
+// var names = ["Andrew", "Edward", "Paul", "Chris" ,"John"];
+
+// while( (i = names.shift()) !== undefined ) {
+//     console.log(i);
+// }
+
+// console.log(names);
+
+// Array.prototype.slice() ---------------------------------------------------------------->>>>>>
+
+
