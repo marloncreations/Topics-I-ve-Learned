@@ -414,4 +414,223 @@ const myArrayOfObjects = [
 
 // Array.prototype.slice() ---------------------------------------------------------------->>>>>>
 
+// Example 1
+
+// const slicedItem = myWordArray.slice(2,4);
+
+// console.log(slicedItem);
+
+// Example 2
+
+// myAnimalArray = ["Jiraffe", "Dog", "Cat", "Lion", "Tiger", "Snake", "Hamster"];
+
+// //Last Element is not counted
+// console.log(myAnimalArray.slice(4, 6));
+// console.log(myAnimalArray.slice(myAnimalArray.length -1));
+// console.log(myAnimalArray.slice(-6, -2 ));
+// console.log(myAnimalArray.slice(-1)); 
+// console.log(myAnimalArray.slice(1));
+// console.log(myAnimalArray.slice(4, 6));
+
+// Example 3
+
+// function list(...arr) {
+//     console.log(Array.prototype.slice.call(arr /* or "arguments here by itself" */));
+// }
+
+// const myList = list(1,2,3);
+
+// Array.prototype.some() ---------------------------------------------------------------------->>>>>>
+
+// Test whether at least one element passes the condition
+
+// Example 1
+
+// const myNumberArray = [1,2,3,4,5,6,7,8,9,0];
+
+// const even = myNumberArray.some(function(item) {
+//     // if(item % 2 === 0) {
+//     //     console.log(item);
+//     // }
+//     return item % 2 === 0;
+// });
+
+// console.log(even);
+
+// myNumberArray.forEach((item) => {
+//     if(item % 2 === 0){
+//         console.log(item);
+//     }
+// })
+
+// Example 2
+
+// var fruits = ['apple', 'banana', 'mango', 'guava'];
+
+// function checkAvailability(arr, val) {
+//   return arr.some(function(arrVal) {
+//     return val === arrVal;
+//   });
+// }
+
+// checkAvailability(fruits, 'kela');   // false
+// checkAvailability(fruits, 'banana'); // true
+
+// Array.prototype.sort() ---------------------------------------------------------------------->>>>>>
+
+// Default Sort
+
+// const months = ["January", "February","December","July","August"];
+
+// console.log(months.sort());
+
+// Conditional Sort, 2 values are passed ('a' and 'b') and depending on the condition it return -1 or 1 and thats how it sorts them example, if a= 10 b=3, that means a is bigger than b then the returned value will be 1 because the operation result was 7, if a negative value is returned then the returned value will be -1.
+
+// Example 1
+
+// var items = ['réservé', 'premier', 'cliché', 'communiqué', 'café', 'adieu'];
+
+// const newItems = items.sort(function (a, b) {
+//   return a.localeCompare(b);
+// });
+
+// const newItems2 = items.sort();
+
+// console.log(newItems);
+// console.log(newItems2);
+
+// Example 2
+
+// var items = [
+//     { name: 'Edward', value: 21 },
+//     { name: 'Sharpe', value: 37 },
+//     { name: 'And', value: 45 },
+//     { name: 'The', value: -12 },
+//     { name: 'Magnetic', value: 13 },
+//     { name: 'Zeros', value: 37 }
+// ];
+
+// // sort by value
+// const byValue = items.sort(function (a, b) {
+//     return a.value - b.value;
+// });
+
+// console.table(byValue);
+
+// // sort by name
+// const byName = items.sort(function(a, b) {
+//     var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+//     var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+
+//     if (nameA < nameB) {
+//         return -1;
+//     }
+//     if (nameA > nameB) {
+//         return 1;
+// }
+// // names must be equal
+// return 0;
+// });
+
+// console.table(byName);
+
+// // Other Way
+
+// const sortByName = items.sort(function(a,b) {
+//     return a.name - b.name;
+// });
+
+// console.table(sortByName);
+
+// let numbers = [5, 2, 1, -10, 8];
+// numbers.sort((a, b) => {
+//     console.log(a, b);
+//     return b - a;
+// });
+// console.log(numbers);
+
+// Array.prototype.splice() ---------------------------------------------------------------------->>>>>>
+
+// - Mutates the array
+// - Returns the elements removed
+// - arguments -1 -Index, -2 -Amount of Elements to Remove and -3 - item to replace the array item with, it can be more than one element if more than the amount of items to remove are passed then it add the rest to the array.
+// - negative array values can be used.
+
+// const months = ["January", "February","December","July","August"];
+
+// // inserts a new item
+// months.splice(1, 0, "October");
+
+// // deletes 2 itmes and replaces them with 2 new values
+// const removedItems = months.splice(1, 2, "September", "not a Month");
+
+// console.log(months); // mutated array
+// console.log(removedItems); // removed items
+
+// const removeFirstElement = months.splice(0, 1); // removes first element
+// const removeLastElement = months.splice(months.length -1, 1); // removes last element;
+
+// console.log(months);
+// console.log(removeFirstElement);
+// console.log(removeLastElement);
+
+// // removes all elements after index one
+
+// const removeAllElements = months.splice(1);
+
+// console.log(months);
+// console.log(removeAllElements);
+
+// Array.prototype.toLocaleString() ------------------------------------------------------------>>>>>>
+
+// More Advanced receives 2 arguments locales and options
+// locales are the languages and how it should be displayed, and 'options' are options for the locales.
+
+// Example - en', {timeZone: "UTC"} another Example - 'ja-JP', { style: 'currency', currency: 'JPY' }
+
+// var array1 = [1, 'a', new Date('21 Dec 1997 14:12:00 UTC')];
+// var localeString = array1.toLocaleString('en', {timeZone: "UTC"});
+// var localeString2 = array1.toLocaleString();
+
+// const myArrayCool = ["Marlon", "Hello", 445555, "november"];
+
+// const myStrings = '450000';
+
+// const myNewArray = myArrayCool.toLocaleString();
+
+// console.log(myNewArray);
+
+// console.log(localeString);
+// console.log(localeString2);
+// expected output: "1,a,12/21/1997, 2:12:00 PM",
+// This assumes "en" locale and UTC timezone - your results may vary
+
+// Array.prototype.toString() ------------------------------------------------------------>>>>>>
+
+// Converts an Array into a string separated by a comma;
+
+// var array123 = [1,2,'a','1a','3424234'];
+
+// const myNewWord = array123.toString()
+
+// console.log(array123);
+// console.log(myNewWord);
+
+// Array.prototype.unshift() ------------------------------------------------------------>>>>>>
+
+// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+// const returnedValue = myWordArray.unshift(`This is the new Item ${myWordArray.length + 1}`);
+// myWordArray.push("1","2");
+// myWordArray.unshift("1","2");
+
+// console.log(myWordArray);
+// console.log(returnedValue);
+
+
+
+
+
+
+
 

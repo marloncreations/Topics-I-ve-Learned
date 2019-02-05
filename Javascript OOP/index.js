@@ -52,7 +52,7 @@
 
 // // inherits the prototype of another objects prototype;
 // Magazine.prototype = Object.create(Book.prototype);
-// // set the constructor to the function contructor that created the instance
+// // sets the constructor to the function contructor that created the instance
 // Magazine.prototype.constructor = Magazine;
 
 // let magazine1 = new Magazine('Robert flies in the hood', 'Robert Blake', '1996', 'January'); 
