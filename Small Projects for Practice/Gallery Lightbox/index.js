@@ -27,7 +27,7 @@ function openModal(e) {
 
 // Closes Modal Dynamically
 function closeModal(e) {
-    if(e.target.classList.contains('modal__close-button')){
+    if(e.target.classList.contains('modal__close-button') || e.target.classList.contains('modal')){
         let modal = document.querySelector('.modal');
         document.body.removeChild(modal); 
     }
@@ -53,7 +53,7 @@ function goLeft(e) {
 function goRight(e) {
     const modal = document.querySelector('.modal .modal__container img');
     const p = document.querySelector('.modal .modal__container p');
-    if(e.target.classList.contains('modal__right-arrow')){
+    if(e.target.classList.contains('modal__right-arrow') || e.target === modal){
         if(index === galleryImages.length - 1) {
             index = 0;
         } else {
