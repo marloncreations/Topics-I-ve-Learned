@@ -1,9 +1,57 @@
 // Function Properties
 
+// .caller ------------------------------------------------------------------------------>>>>>>>>>>>
+// function getName(name) {
+//     const sayName = `My name is ${name}`;
+//     console.log(sayName );
+//     console.log(sayName.caller);
+// }
+
+// function sayName(name, age) {
+//     getName(name);
+//     console.log(`I am ${age} years old`);
+// }
+
+// sayName("Marlon", 23);
+
+// function myFunc() {
+//     if (myFunc.caller == null) {
+//         return 'The function was called from the top!';
+//     } else {
+//         return 'This function\'s caller was ' + myFunc.caller;
+//     }
+// }
+
+// console.log(myFunc());
+
+// .length ------------------------------------------------------------------------------>>>>>>>>>>>
+
+// function joinTwoNames(name1, name2) {
+//     console.log(name1 + name2);
+// }
+
+// joinTwoNames("Marlon", "Parra");
+// console.log(joinTwoNames.length);
+
+// console.log((function()        {}).length); /* 0 */
+// console.log((function(a)       {}).length); /* 1 */
+// console.log((function(a, b, c)    {}).length); /* 2 etc. */
+
+// console.log((function(...args) {}).length); 
+// // 0, rest parameter is not counted
+
+// console.log((function(a, b = 1, c) {}).length);
+// // 1, only parameters before the first one with 
+// // a default value is counted
+
+
+
+
+
 
 // Function Methods
 
-// .call: ------------------------------------------------------------------------------>>>>>>>>>>>
+// .call() ------------------------------------------------------------------------------>>>>>>>>>>>
     // - you can pass arguments with call one by one to feed to a function.
     // - it immediately invokes the function
     // - With call(), an object can use a method belonging to another object
@@ -62,7 +110,7 @@
 
 
 
-// .apply: ------------------------------------------------------------------------------>>>>>>>>>>>
+// .apply() ------------------------------------------------------------------------------>>>>>>>>>>>
     // - you can pass an array of arugments to feed to a function.
     // - it immediately invokes the function
     // - the "this" keyword can be set to anything.
@@ -110,7 +158,7 @@
 
 
 
-// .bind: ------------------------------------------------------------------------------>>>>>>>>>>>
+// .bind() ------------------------------------------------------------------------------>>>>>>>>>>>
     // - you can pass elements one by one like call.
     // - returns a new function instead of invoking a new function to use later.
 
@@ -166,3 +214,25 @@
 // var result3 = addThirtySeven(5, 10);
 // // 37 + 5 = 42 , second argument is ignored
       
+
+
+
+
+
+
+
+// .toSource() & .toString() -------------------------------------------------------------->>>>>>>>>>>
+
+// function hello() {
+//     const name = "Marlon";
+//     console.log(`Hello I am ${name}`);
+// }
+
+// console.log(hello.toString());
+
+// console.log(Math.abs.toString());
+
+// console.dir(hello);
+// .toSource: is when you call the function on the console without executing it and it returns you the code, toSource() happens internally in javascript not written by code.
+
+// .toString: gives you the function code in a string;
