@@ -59,3 +59,15 @@ const myString = "☃★♲Hello I am a really cute fox in the wild";
 // console.log("".concat(4, 5));
 
 // .endsWith -------------------------------------------------------------------------->>>>>>>>>>>>>>>
+
+// console.log(myString);
+
+// const endsWithWild = myString.endsWith('wil', myString.length -1);
+// console.log(endsWithWild);
+
+// .includes -------------------------------------------------------------------------->>>>>>>>>>>>>>>
+
+// console.log(myString);
+
+// const includesThis = myString.includes("really", 24);
+// console.log(includesThis);
