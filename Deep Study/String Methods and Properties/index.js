@@ -2,7 +2,7 @@
 
 // .length -------------------------------------------------------------------------->>>>>>>>>>>>>>>
 
-const myString = "☃★♲Hello I am a really cute fox in Hello the wild";
+// const myString = "☃★♲Hello I am a really cute fox in Hello the wild";
 
 // console.log(myString.length);
 
