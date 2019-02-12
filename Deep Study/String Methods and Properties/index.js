@@ -137,10 +137,104 @@ const myString = "☃★♲Hello I am a really cute fox in Hello the wild";
 
 // .normalize -------------------------------------------------------------------------->>>>>>>>>>>>>>>
 
-var first = '\u212B'; 
+// var first = '\u212B'; 
 
-const normalized = first.normalize();
+// const normalized = first.normalize();
 
-console.log(normalized);
+// console.log(normalized);
 
-// .padEnd -------------------------------------------------------------------------->>>>>>>>>>>>>>> 
+// .padEnd .padStart ------------------------------------------------------------------>>>>>>>>>>>>>>> 
+
+// const myString1 = "SevenSeven";
+
+// const first4Digits = myString1.slice(0, 4);
+
+// const result = first4Digits.padEnd(myString1.length, "*");
+
+// console.log(result);
+
+// const last4Digits = myString1.slice(-4);
+
+// const result2 = last4Digits.padStart(myString1.length, "*");
+
+// console.log(result2);
+
+// .repeat ------------------------------------------------------------------>>>>>>>>>>>>>>> 
+
+// const repeatString = "love ";
+
+// console.log("I " + repeatString.repeat(10) + "you");
+
+// .replace ------------------------------------------------------------------>>>>>>>>>>>>>>>
+
+// const myString2 = "They love, I love, You love"
+
+// const wordToReplace = /love/gi;
+
+// console.log(myString2.replace(wordToReplace, "run"));
+
+// .search ------------------------------------------------------------------>>>>>>>>>>>>>>>
+
+// const paragraph = 'The quick brown fox?';
+
+// const regex = /[^\w\s]/g;
+
+// console.log(paragraph.search(regex));
+
+
+// console.log(paragraph[paragraph.search(regex)]);
+
+// console.log(paragraph[4]);
+
+// .slice ------------------------------------------------------------------>>>>>>>>>>>>>>>
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+
+// const retrievedWord = str.slice(4,9);
+// const retrievedWord1 = str.slice(-4);
+
+// console.log(retrievedWord);
+// console.log(retrievedWord1);
+
+// .split ------------------------------------------------------------------>>>>>>>>>>>>>>>
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+
+// const arrayOfStrings = str.split(" ", 4);
+
+// console.log(arrayOfStrings);
+// console.log(arrayOfStrings[3]);
+
+// EXAMPLE 1
+
+// function splitString(stringToSplit, separator) {
+//     var arrayOfStrings = stringToSplit.split(separator);
+  
+//     console.log('The original string is: "' + stringToSplit + '"');
+//     console.log('The separator is: "' + separator + '"');
+//     console.log('The array has ' + arrayOfStrings.length + ' elements: ' + arrayOfStrings.join(' / '));
+// }
+  
+//   var tempestString = 'Oh brave new world that has such people in it.';
+//   var monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec';
+  
+//   var space = ' ';
+//   var comma = ',';
+  
+//   splitString(tempestString, space);
+//   splitString(tempestString);
+//   splitString(monthString, comma);
+
+// .startsWith ------------------------------------------------------------------>>>>>>>>>>>>>>>
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+
+// console.log(str.startsWith('quick', 4));
+
+// .substring ------------------------------------------------------------------>>>>>>>>>>>>>>>
+
+// const str = "mozilla";
+
+// console.log(str.substring(1, 3));
+// console.log(str.substring(2));
+
