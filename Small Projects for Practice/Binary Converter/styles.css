@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+form {
+    /* background: blue; */
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+label, input, select, button, p {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    color: white;
+    background: #20639B;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background: rgb(18, 163, 61);
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+#result {
+    width: 100%;
+    background: #ED553B;
+}
+
+select {
+    background: #20639B;
+    border: none;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    outline: none;
+    border: none;
+}
+
+button:active {
+    background: rgb(29, 209, 83);
+}
+
+label, p {
+    color: white;
+    background: #173F5F;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    display: none;
+}

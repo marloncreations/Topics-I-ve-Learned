@@ -9,10 +9,17 @@ button.addEventListener("click", convertNumber);
 function convertNumber(e) {
     e.preventDefault();
     if(!number.value) {
-        return alert.innerHTML = "Write a Number"
+        alert.innerHTML = "Write a Number"
     } else if (isNaN(number.value)) {
-        return alert.innerHTML = "The Value is not A Number";
+        alert.style.display = "block"
+        alert.innerHTML = "The Value is not A Number";
+    } else {
+        alert.style.display = "none";
+        alert.innerHTML = "The Value is not A Number";
     }
+
+
+
     if(option.value === "Binary") {
         const convertNumber = parseInt(number.value).toString(2);
         result.value = convertNumber;
