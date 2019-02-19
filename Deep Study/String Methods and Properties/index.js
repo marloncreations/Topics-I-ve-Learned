@@ -238,3 +238,72 @@
 // console.log(str.substring(1, 3));
 // console.log(str.substring(2));
 
+// .toLocaleLowerCase() & .toLocaleUpperCase() ----------------------------------->>>>>>>>>>>>>>>
+
+// var dotted = 'İstanbul';
+// var city = 'istanbul';
+
+// console.log('EN-US: ' + dotted.toLocaleLowerCase('en-US'));
+
+// console.log('TR: ' + dotted.toLocaleLowerCase('tr'));
+
+// console.log('EN-US: ' + city.toLocaleUpperCase('en-US'));
+
+// console.log('TR: ' + city.toLocaleUpperCase('tr'));
+
+// .toLowerCase() & .toUpperCase() ----------------------------------------------->>>>>>>>>>>>>>>
+
+// const sentence = "MY name is Marlon and I will BE LOWE CASE";
+
+// const lower = sentence.toLowerCase();
+// const upper = sentence.toUpperCase();
+
+// console.log(lower);
+// console.log(upper);
+
+// toString() & valueOf()---------------------------------------------------------->>>>>>>>>>>>>>>
+
+// const stringObj = new String("foo");
+
+// console.log(stringObj);
+
+// const newString = stringObj.toString();
+// const newString1 = stringObj.toString();
+
+// console.log(newString);
+// console.log(newString1);
+
+// trim() , trimEnd() & trimStart()--------------------------------------------------->>>>>>>>>>>>>>>
+
+// const myDirtyString = "           Hello I am           ";
+
+// console.log(myDirtyString.trim());
+// console.log(myDirtyString.trimEnd()); // or trimRight();
+// console.log(myDirtyString.trimStart()); // or trimLeft();
+
+// String.raw() --------------------------------------------------->>>>>>>>>>>>>>>
+
+
+// Create a variable that uses a Windows
+// path without escaping the backslashes:
+// const filePath = String.raw`C:\Development\profile\aboutme.html`;
+
+// console.log('The file was uploaded from: ' + filePath);
+// expected output: "The file was uploaded from: C:\Development\profile\aboutme.html"
+
+// [@@iterator]() --------------------------------------------------->>>>>>>>>>>>>>>
+
+// const str = 'The quick red fox jumped over the lazy dog\'s back.';
+
+// let iterator = str[Symbol.iterator]();
+// let theChar = iterator.next();
+
+// console.log(theChar);
+
+// while(!theChar.done && theChar.value !== ' ') {
+//   console.log(theChar.value);
+//   theChar = iterator.next();
+  // expected output: "T"
+  //                  "h"
+  //                  "e"
+// }  

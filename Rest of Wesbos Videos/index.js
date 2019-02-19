@@ -255,14 +255,112 @@
 
 // WeakMaps ---------------------------------------------------------------->>>>>>>>>
 
-let dog1 = { name: 'Snickers', age: 3 }
-let dog2 = { name: 'Hugo', age: 12 }
+// let dog1 = { name: 'Snickers', age: 3 }
+// let dog2 = { name: 'Hugo', age: 12 }
 
-const strong = new Map();
-const weak = new WeakMap();
+// const strong = new Map();
+// const weak = new WeakMap();
 
-strong.set(dog1, "This is the first dog on the Map");
-weak.set(dog2, "This is the Second dog on the WeakMap");
+// strong.set(dog1, "This is the first dog on the Map");
+// weak.set(dog2, "This is the Second dog on the WeakMap");
 
-dog1 = null;
-dog2 = null;
+// dog1 = null;
+// dog2 = null;
+
+// Class Properties ---------------------------------------------------------------->>>>>>>>>
+
+// class Dog {
+//     constructor(name, breed) {
+//         this.name = name;
+//         this.breed = breed;
+//     }
+//     barks = 0;
+//     bark() {
+//         console.log(`Bark Bark!! My name is ${this.name}`);
+//         this.barks = this.barks + 1;
+//         console.log(this.barks);
+//     }
+//     cuddle() {
+//         console.log(`I love my Owner`);
+//     }
+//     static info() {
+//         console.log(`A dog is better than a cat by 10 times`);
+//     }
+//     get description() {
+//         return `${this.name} is a ${this.breed} type of dog`;
+//     }
+//     set nicknames(value) {
+//         this.nick = value.trim();
+//     }
+//     get nicknames() {
+//         return this.nick.toUpperCase();
+//     }
+// }
+
+// const snickers = new Dog('Snickers', 'Albert Charles');
+// const sunny = new Dog('Sunny', 'Golden Doodle');
+
+// padStart() $ padEnd() ---------------------------------------------------------------->>>>>>>>>
+
+// const strings = ["short", 'this is really really long', 'medium size', 'really really really really really size'];
+// const longestString = strings.sort((a,b) => b.length - a.length).map(str => str.length)[0];
+// console.log(longestString);
+
+// strings.forEach(str => console.log(str.padStart(longestString)));
+
+// ES7 Exponential Operator ---------------------------------------------------------------->>>>>>>>>
+
+// const arraymy = ['a','b','c'].includes('c');
+
+// console.log(arraymy);
+
+// num1 = 4;
+
+// result1 = (num1**num1)**num1;
+// result2 = num1**num1**num1;
+// result3 = Math.pow(Math.pow(num1,num1),num1);
+// result4 = 4**4**4;
+
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
+// console.log(result4);
+
+// Function Arguments Trailing Comma ------------------------------------------------------>>>>>>>>>
+
+// const names = ['wes', 'kait', 'lux', 'poppy',];
+// const people = {
+//     wes: 'Cool',
+//     kait: 'Even Cooler',
+//     lux: 'Cooles',
+//     poppy: 'Smallest',
+//     snickers: 'Bow wow',
+// }
+
+// function family(mom, dad, kids, dogs,) {
+
+// }
+
+// Object.entries() & Object.values() ------------------------------------------------------>>>>>>>>>
+
+// const inventory = {
+//     backpacks: 10,
+//     jeans: 23,
+//     hoodies: 4,
+//     shoes: 11,
+// }
+// const nav = Object.keys(inventory).map(item => `<li>${item}</li>`);
+// console.log(nav);
+
+// const totalInventory = Object.values(inventory).reduce((a,b) => a + b, 0);
+// console.log(totalInventory);
+
+// Object.entries(inventory).forEach(([key, val]) => {
+//     console.log(key, val);
+// });
+
+// for(const [key, val] of Object.entries(inventory)) {
+//     console.log(key);
+
+//     if(key === 'jeans') break;
+// }
