@@ -8,7 +8,7 @@
 
 // console.log(date1, date2);
 
-const today = new Date();
+// const today = new Date();
 // const date3 = new Date(2013, 2, 1, 2, 70, 100, 1000000);
 // // value, dateString -> // year, monthIndex, day, hours, minutes, seconds, milliseconds
 
@@ -54,12 +54,45 @@ console.log(javaScriptRelease);
 */
 
 // Date.prototype.getDate() ----------------------------------------------------------------------->
+const today = new Date();
+console.log(today.getDate()); //retrieves day of the month 1 - 31
 
-// Date.now() ----------------------------------------------------------------------------------->
+// Date.getDay() ----------------------------------------------------------------------------------->
+console.log(today.getDay()); //retrieves day of the week // Sunday - Saturday : 0 - 6
+// console.log(new Intl.DateTimeFormat('en-US', options).format(today)); // get the day in string format
 
-// Date.now() ----------------------------------------------------------------------------------->
+// Date.getFullYear() ----------------------------------------------------------------------------------->
+console.log(today.getFullYear()); // gets year
 
-// Date.now() ----------------------------------------------------------------------------------->
+// Date.getHours() ----------------------------------------------------------------------------------->
+console.log(today.getHours()); // gets hours
 
-// Date.now() ----------------------------------------------------------------------------------->
+// Date.getMilliseconds() ---------------------------------------------------------------------------->
+console.log(today.getMilliseconds()); // gets miliseconds
 
+// Date.getMinutes() ---------------------------------------------------------------------------->
+console.log(today.getMinutes()); // gets minutes
+
+// Date.getMonth() ---------------------------------------------------------------------------->
+console.log(today.getMonth()); // gets month , zero based value 0 - 11
+
+// Date.getSeconds() ---------------------------------------------------------------------------->
+console.log(today.getSeconds()); // gets seconds  0 - 59
+
+// Date.getTime() ---------------------------------------------------------------------------->
+console.log(today.getTime()); //  returns milliseconds since 1970 // same for all the time zones
+
+// Date.getTimezoneOffset() ---------------------------------------------------------------------------->
+console.log(today.getTimezoneOffset()); //method returns the time zone difference, in minutes, from current locale (host system settings) to UTC.
+
+var date1 = new Date('August 19, 1975 23:15:30 GMT+07:00');
+console.log(date1.getTimezoneOffset());
+
+var date2 = new Date('August 19, 1975 23:15:30 GMT-02:00');
+console.log(date2.getTimezoneOffset());
+
+var difference = date1.getTimezoneOffset() === date2.getTimezoneOffset();
+console.log(difference);
+
+// Date.getUTCDate() ---------------------------------------------------------------------------->
+console.log(today.getUTCDate()); // gets day of the month according to universal time
