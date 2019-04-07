@@ -1,0 +1,336 @@
+/* .main-header {
+	    padding-top: 0px !important;
+    min-height: 0px !important;
+	margin-bottom: 0px !important;
+}
+.site-navigation {
+	padding-top:45px !important;
+}
+#top-info {
+	display:none !important;
+}
+
+#post-48  {
+    padding: 0px !important;
+}
+.product-slider {
+background-image:url("http://islandcarhire.graphicdetail.co.nz/wp-content/uploads/2019/01/29129023-white-sand-detail-texture-background-top-view.jpg");
+}
+.owl-dots {
+	display:none;
+}
+.slide-bg
+ {
+	background:none;
+}
+.wcps-container-127 {
+    padding-top: 0px !important;
+	padding-left:350px !important;
+	padding-right:350px !important;
+	padding-bottom:0px !important;
+}
+.wcps-container #wcps-127{
+	position:fixed !important;
+	left:-30px;
+	top:420px;
+	   padding-top: 0px !important;
+	padding-left:350px !important;
+	padding-right:350px !important;
+	padding-bottom:0px !important;
+}
+.hedr {
+	width:390px;	
+}
+.hedr-left {
+	width:390px;	
+}
+.column-left {
+	padding-left:21.5%;
+	padding-right:29.5%;
+}
+.blk-quote {
+ padding-top:50px !important;
+width:200px !important;
+	height:200px;
+	margin:0px !important;
+	padding-right:0px !important;
+}
+.grtrnge{
+	margin-right:0px;	
+}
+.greater-range{
+	padding-right:4%;
+}
+.is-style-squared {
+	    position: absolute;
+    left: 38%;
+}
+#top-footer,#cta-section ,#colophon {
+	background-image:url("http://islandcarhire.graphicdetail.co.nz/wp-content/uploads/2019/01/sky-183870_1920.jpg");	
+}
+#cta-section {
+	height:200px;
+}
+#top-footer, #colophon{
+	background-color:transparent;	}
+#text-3 {
+	float:right;
+	padding-left: 40% !important;
+	position:absolute;
+	top:2%;
+	left:41%;
+
+}
+#text-3 p {
+		background-color:yellow !important;
+	font-weight:bold !important;
+}
+.awards1 {
+	position: absolute !important;
+    bottom: -8% !important;
+    left: 41% !important;
+}
+.awards2{
+	    position: absolute !important;
+    bottom: -9% !important;
+    left: 48% !important;
+}
+.page-id-48 .owl-prev {
+	left:20% !important;
+}
+.page-id-48 .owl-next {
+	right:20% !important;
+}
+
+.page-id-48 #wcps-127 .wcps-items .wcps-items-title {
+	position:absolute;
+	top:3px;
+}
+
+.page-id-48 #wcps-127 .wcps-items .wcps-items-price {
+	    position: absolute !important;
+    top: 191px !important;
+}
+.page-id-48 #wcps-127 .wcps-items .wcps-items-cart {
+	position:absolute !important;
+    top: 180px !important;
+    left: 107px !important;
+}
+#wcps-127 .wcps-items {
+    background: white !important;
+}
+#bottom-footer .site-info {
+	    padding: 0px !important;
+    margin-left: 230px !important;
+}
+
+
+element.style {
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], #infinite-handle span button, #infinite-handle span button:hover, #infinite-handle span button:focus, #infinite-handle span button:active, .entry-meta span .fa, .entry-footer span .fa, .comment-navigation .nav-previous a, .comment-navigation .nav-next a, #top-bar a.button, #top-bar button, #top-bar input[type="button"], #top-bar input[type="reset"], #top-bar input[type="submit"], .top-cart:hover .item-count, .top-login-dropdown #respond input#submit, .top-login-dropdown a.button, .top-login-dropdown button.button, .top-login-dropdown input.button, .top-login-mini-cart #respond input#submit, .top-login-mini-cart a.button, .top-login-mini-cart button.button, .top-login-mini-cart input.button, .featured-post:hover .featured-icon, #cta-section a:hover .cta-icon .fa, #cta-section a.button, #footer-menu a[href*="codepen.io"]:hover:before, #footer-menu a[href*="digg.com"]:hover:before, #footer-menu a[href*="dribbble.com"]:hover:before, #footer-menu a[href*="dropbox.com"]:hover:before, #footer-menu a[href*="facebook.com"]:hover:before, #footer-menu a[href*="flickr.com"]:hover:before, #footer-menu a[href*="foursquare.com"]:hover:before, #footer-menu a[href*="plus.google.com"]:hover:before, #footer-menu a[href*="github.com"]:hover:before, #footer-menu a[href*="instagram.com"]:hover:before, #footer-menu a[href*="linkedin.com"]:hover:before, #footer-menu a[href*="pinterest.com"]:hover:before, #footer-menu a[href*="getpocket.com"]:hover:before, #footer-menu a[href*="reddit.com"]:hover:before, #footer-menu a[href*="skype.com"]:hover:before, #footer-menu a[href*="stumbleupon.com"]:hover:before, #footer-menu a[href*="tumblr.com"]:hover:before, #footer-menu a[href*="twitter.com"]:hover:before, #footer-menu a[href*="vimeo.com"]:hover:before, #footer-menu a[href*="wordpress.com"]:hover:before, #footer-menu a[href*="wordpress.org"]:hover:before, #footer-menu a[href*="youtube.com"]:hover:before, #footer-menu a[href^="mailto:"]:hover:before, #footer-menu a[href*="spotify.com"]:hover:before, #footer-menu a[href*="twitch.tv"]:hover:before, #footer-menu a[href$="/feed/"]:hover:before, .woocommerce ul.products li.product .button.add_to_cart_button, .woocommerce ul.products li.product .button, .woocommerce a.added_to_cart, .woocommerce div.product div.images .woocommerce-product-gallery__trigger, .woocommerce ul.products li.product .price, .woocommerce ul.products li.product .price:before, .woocommerce div.product p.price, .woocommerce div.product p.price:before, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .page .woocommerce-tabs ul.tabs li:before, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+    background: #0b46c8;
+}
+.page-id-87 .woocommerce ul.products li.product .button.add_to_cart_button, .woocommerce ul.products li.product .button, .woocommerce a.added_to_cart {
+    position: absolute !important;
+    right: 10px !important;
+    top: 84% !important;
+	opacity:1 !important;
+	visibility:visible !important;
+}
+.woocommerce-loop-product__title {
+	font-size:0.9em !important;
+}
+#site-branding {
+    padding: 8px 0 20px 0;
+}
+.breadcrumbs {
+	display:none;
+}
+#top-bar {
+	padding:0px !important;
+	background-color: transparent !important;
+    border: none !important;
+}
+
+#top-bar .widget {
+	width:100%;
+}
+
+.main-title {
+	display:none;
+}
+
+.owl-item {
+	position: relative;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.main-header,.header-title {
+	display:none;
+}
+
+.container {
+	max-width: 98%;
+}
+
+#wcps-127, .wcps-ribbon {
+	width: 100%;
+}
+
+.wcps-ribbon {
+	position: relative!important;
+	display: none !important;
+	color: white !important;
+}
+
+.owl-nav.middle {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/* .owl-prev:hover {
+	left: 0;
+}
+ */
+/*
+.wcps-items-title a{
+	color: white !important;
+}
+
+article {
+	padding: 0!important;
+}
+
+/*for the elements in each container*/
+/*
+.layer-content {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute !important;
+	bottom: 0;
+	width: 100% ;
+/* 	padding: 0 !important; */
+}
+/*
+.owl-stage-outer {
+	background: white !important;
+}
+
+.wcps-container, .wcps-container-127 {
+	padding: 0 !important;
+	margin-top: 100px;
+	margin-bottom: 70px;
+}
+
+.owl-dots {
+	display: none;
+}
+
+.wcps-items {
+	position: relative !important;
+	padding: 0 !important;
+}
+/*
+/*price, title, cart*/
+/*
+.wcps-items-title, .wcps-items-price, .wcps-items-cart  {
+	padding: 0 !important;
+	color: white !important;
+}
+*/
+/* title */
+.wcps-items-title {
+	width: 100%;
+}
+/*
+.wcps-items-cart {
+	width: 50%;
+	text-align:center !important;
+}
+*/
+/* price */
+/*
+.wcps-items-price { 
+	font-size: 2em;
+	font-weight: bold;
+	width: 50%;
+}
+
+.wcps-items-tag { /*don't display*//*
+	display: none;
+}
+
+
+*/
+
+
+
+
+/* Styles for arrows*/
+/*
+.owl-prev, .owl-next {
+	border-radius: 0!important;
+	border: 0 !important;
+	text-align: center;
+	width: 50px !important;
+	height: 50px !important;
+	background-color: #0B46C8 !important;
+	background-position: center !important; 
+	background-origin: no-repeat !important;
+	background-size: 30px 40px !important;
+	box-shadow: none !important;
+}
+
+.owl-prev:hover, .owl-next:hover {
+	background-color:#00A651 !important;
+}
+
+.owl-prev {
+	left:0 !important;
+	background-image: url("http://islandcarhire.graphicdetail.co.nz/wp-content/uploads/2019/02/left.png")!important;
+	 
+}
+
+.owl-next {
+	right:0 !important;
+	background-image: url("http://islandcarhire.graphicdetail.co.nz/wp-content/uploads/2019/02/right.png")!important;
+} */
